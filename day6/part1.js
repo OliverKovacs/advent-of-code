@@ -7,6 +7,6 @@ const part1 = file => require("node:fs")
     .map(([ t, d ]) => [ t/2, Math.sqrt(Math.pow(-t/2, 2) - d) ])
     .map(([ a, b ]) => [ Math.floor(a - b + 1), Math.ceil(a + b - 1) ])
     .map(([ a, b ]) => b - a + 1)
-    .reduce((p, c) => p * c)
+    .reduce((p, c) => p * c);
 
 console.log(part1("input"));
